@@ -301,7 +301,12 @@ public class HallScheme {
             int topY = offset/2 + zone.leftTopY() * (seatWidth + seatGap) + scene.getTopXOffset();
             int bottomX = offset/2 + (zone.leftTopX() + zone.width()) * (seatWidth + seatGap) - seatGap + scene.getLeftYOffset();
             int bottomY = offset/2 + (zone.leftTopY() + zone.height()) * (seatWidth + seatGap) - seatGap + scene.getTopXOffset();
+
             tempCanvas.drawRect(topX, topY, bottomX, bottomY, backgroundPaint);
+            drawTextCentred(tempCanvas, markerPaint, zone.name(),
+                    (topX+bottomX)/2,
+                    (topY+bottomY)/2
+            );
         }
 
         drawScene(tempCanvas);

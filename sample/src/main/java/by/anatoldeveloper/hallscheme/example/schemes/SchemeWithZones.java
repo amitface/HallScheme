@@ -98,9 +98,9 @@ public class SchemeWithZones extends Fragment {
 
     public List<Zone> zones() {
         List<Zone> zones = new ArrayList<>();
-        ZoneExample zone1 = new ZoneExample(1, 8, 17, 10, 6, getActivity().getResources().getColor(R.color.dark_green), "Not used in current version");
+        ZoneExample zone1 = new ZoneExample(1, 8, 17, 10, 6, getActivity().getResources().getColor(R.color.light_white), "Vip zone starts here");
         ZoneExample zone2 = new ZoneExample(2, 8, 4, 10, 12, Color.DKGRAY, "Not used in current version");
-        ZoneExample zone3 = new ZoneExample(3, 0, 0, 26, 2, getActivity().getResources().getColor(R.color.dark_purple), "Not used in current version");
+        ZoneExample zone3 = new ZoneExample(3, 0, 16, 26, 1, getActivity().getResources().getColor(R.color.transparent), "Not used in current version");
         zones.add(zone1);
         zones.add(zone2);
         zones.add(zone3);
